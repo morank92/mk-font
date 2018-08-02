@@ -35,7 +35,6 @@ export default {
           let that = this;
           ws.onopen = () => {
               // Web Socket 已连接上，使用 send() 方法发送数据
-                ws.send('Holle')
                 console.log('数据发送中...')
             }
             ws.onmessage = evt => {
